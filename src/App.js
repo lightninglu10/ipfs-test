@@ -1,8 +1,13 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+const IPFS = require('ipfs')
 
 class App extends Component {
+  componentDidMount() {
+    const node = new IPFS()
+  }
+
   render() {
     return (
       <div className="App">
